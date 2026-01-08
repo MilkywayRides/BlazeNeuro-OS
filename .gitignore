@@ -1,0 +1,8 @@
+config/live-build/chroot/
+config/live-build/cache/
+config/live-build/.build/
+config/live-build/binary/
+config/live-build/*.iso
+config/live-build/*.img
+config/live-build/*.log
+*.o

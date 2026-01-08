@@ -1,0 +1,17 @@
+#!/bin/sh
+set -e
+
+# Create a default user if it doesn't exist (live-config usually handles this, but we ensure it)
+# The default user in live-build is 'user'
+if ! id "user" >/dev/null 2>&1; then
+    useradd -m -s /bin/bash user
+fi
+
+# Add user to sudo group
+usermod -aG sudo user
+
+# Set a default password for the user (optional, usually empty for live)
+echo "user:live" | chpasswd
+
+# Ensure the wallpaper and configs have correct permissions
+chown -R user:user /etc/skel/.config

@@ -1,0 +1,37 @@
+# Desktop Environment
+task-xfce-desktop
+xfce4
+xfce4-goodies
+
+# Kali-like tools and essentials
+network-manager
+network-manager-gnome
+xorg
+lightdm
+lightdm-gtk-greeter
+sudo
+curl
+wget
+git
+vim
+nano
+terminator
+firefox-esr
+thunar
+mousepad
+
+# System utilities
+live-boot
+live-config
+live-config-systemd
+user-setup
+sudo
+e2fsprogs
+dosfstools
+ntfs-3g
+
+# Appearance
+arc-theme
+papirus-icon-theme
+fonts-noto-core
+fonts-font-awesome
